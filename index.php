@@ -20,34 +20,40 @@ session_start();
     
 <body >
 
-    
+    <div class="container">
     <div class="row">
 
         <div class="col s8 offset-s2">
 
-            <div class="carousel carousel-slider center" style="min-height:250px">
+            <div class="carousel carousel-slider center" style="max-height:350px">
     <div class="carousel-fixed-item center">
       
     </div>
-    <div class="carousel-item white-text">
-      <img src="./img/carrusel/1.jpg" width="100%">
-      <p class="white-text"></p>
+    <div class="carousel-item">
+      <img src="assets/media/img/carrusel/derecho.jpg"  width="100%">
     </div>
-    <div class="carousel-item amber white-text">
-            <img src="./img/carrusel/2.jpg" width="100%">
-      <p class="white-text"></p>
+    <div class="carousel-item">
+      <img src="assets/media/img/carrusel/planos.gif" width="100%">
     </div>
-    <div class="carousel-item green white-text">
-      <img src="./img/carrusel/3.jpg" width="100%">
-      <p class="white-text"></p>
+    <div class="carousel-item">
+      <img src="assets/media/img/carrusel/python.jpeg" width="100%">
     </div>
-    <div class="carousel-item blue white-text">
-      <img src="./img/carrusel/4.jpg" width="100%">
-      <p class="white-text"></p>
+    <div class="carousel-item">
+      <img src="assets/media/img/carrusel/Office365.png" width="100%">
+    </div>
+    <div class="carousel-item">
+      <img src="assets/media/img/carrusel/git.jpeg" width="100%">
+    </div>
+    <div class="carousel-item">
+      <img src="assets/media/img/carrusel/banderas.jpg" width="100%">
+    </div>
+    <div class="carousel-item">
+      <img src="assets/media/img/carrusel/redaccion.jpg" width="100%">
     </div>
   </div>    
     </div>
     </div>
+  </div>
 <br>
     <div class="container center-align"> 
       <div class="col s12">
@@ -64,8 +70,14 @@ session_start();
     <script>
     $('.carousel.carousel-slider').carousel({
     fullWidth: true,
-    indicators: true
+    indicators: true,
+    duration: 200
   });
+    autoplay();
+    function autoplay( ){
+      $('.carousel').carousel('next');
+      setTimeout(autoplay, 4500);
+    }
     </script>
     
     <script>$( document ).ready(function)</script>

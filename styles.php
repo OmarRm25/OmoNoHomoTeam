@@ -1,6 +1,6 @@
 <?php
     echo'
-    <link rel="icon" type="image/png" sizes="120x120" href="./img/logos/unam.png">
+    <link rel="icon" type="image/jpg" sizes="120x120" href="assets/media/img/favicon.jpg">
     <!--Materialize files-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="assets/css/materialize.css">
