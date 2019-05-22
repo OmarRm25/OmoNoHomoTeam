@@ -1,0 +1,52 @@
+comparacion de base de datos
+
+-------------------COMPUTO CON A-204------------------
+
+
+SELECT * FROM t_bienes_cae_computo t1
+
+INNER JOIN t_inventario_204 t2
+	ON t1.Numero_inventario = t2.NoSerieUnam
+
+
+   WHERE t1.Numero_inventario = t2.NoSerieUnam
+   
+ -------------------------------------------------------MOBILIARIO CON A-204--------------------------------------------
+	
+	SELECT * FROM t_bienes_cae_mobiliario t1
+
+INNER JOIN t_inventario_204 t2
+	ON t1.Numero_inventario = t2.NoSerieUnam
+
+
+   WHERE t1.Numero_inventario = t2.NoSerieUnam
+   		
+---------------------------------CPMPUTO CON 203-------------
+SELECT * FROM t_bienes_cae_computo t1
+
+INNER JOIN t_inventario_203 t2
+	ON t1.Numero_inventario = t2.NoInventario
+
+
+   WHERE t1.Numero_inventario = t2.NoInventario
+  
+ -------------------------------------------------------MOBILIARIO CON A-203--------------------------------------------
+
+ SELECT * FROM t_bienes_cae_mobiliario t1
+
+INNER JOIN t_inventario_203 t2
+	ON t1.Numero_inventario = t2.NoInventario
+
+
+   WHERE t1.Numero_inventario = t2.NoInventario
+   
+--------------------------faltantes de a203 de computo y mobiliario---------
+SELECT* FROM t_inventario_204 t1
+
+INNER JOIN t_bienes_cae_mobiliario t2
+	on t1.NoSerieUnam != t2.Numero_inventario
+
+INNER join t_bienes_cae_computo t3
+	on t1.NoSerieUnam != t2.Numero_inventario
+
+WHERE t1.NoSerieUnam != t2.Numero_inventario and t1.NoSerieUnam != t3.Numero_inventario
