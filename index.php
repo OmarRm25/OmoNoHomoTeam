@@ -6,7 +6,7 @@ session_start();
 <head>
 <meta charset="UTF-8">
 	<title>Menu</title>
-
+<link rel="icon" type="image/jpg" sizes="120x120" href="assets/media/favicon.jpg">
 <?php include('./styles.php') ?>
 <style>
     .backdrop{
