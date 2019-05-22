@@ -8,7 +8,7 @@ echo '
 
 				<ul class="rigth" >
                 
-                    <li><a data-activates="slide-out" class="brand-logo"><i class="material-icons ">&#xE5D2;</i></a></li>
+                    
 				
 				</ul>
 
@@ -22,7 +22,7 @@ echo '
 
 
 
-	      <ul id="slide-out" class="side-nav fondomenu"  style="background:#00BCD4">
+	      <ul style="background:#00BCD4">
 
             <li>
             <div class="user-view" >
@@ -33,17 +33,11 @@ echo '
 
           <li>
             <a href="./login.php">
-            <i class="material-icons">
+            <i class="material-icons tooltipped" data-position="bottom" data-tooltip="Iniciar Sesión">
             <font color="white">account_circle</font>          
-            </i> <font color="white">Iniciar Sesión</font></a>
+            </i> </a>
           </li>
           
-          <li>
-            <a href="./form_contacto.php">
-            <i class="material-icons">
-            <font color="white">mail</font>          
-            </i> <font color="white">Contáctanos</font></a>
-          </li>
         </ul>
 
 
