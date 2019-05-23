@@ -1,9 +1,9 @@
 <?php
 session_start();
-$conn = new mysqli('localhost', 'root', '', 'db_usuarios');
+$conn = new mysqli('localhost', 'root', '', 'cursos_inter');
 mysqli_set_charset($conn,'utf8'); 
 
-$consulta= $conn->query("select * from usuarios");
+$consulta= $conn->query("select * from registro_user");
 ?>
 
 <!DOCTYPE html>
@@ -25,10 +25,8 @@ $consulta= $conn->query("select * from usuarios");
     <!--seccion A-->
     
     <th align="center">Nombre</th>
-	<th align="center">Cuenta/Trabajador</th>
-	<th align="center">Restricción</th>
-    <th align="center">Motivo de la Restricción</th>
-    <th align="center">Comentarios</th>        
+	<th align="center">Numero de Cuenta</th>
+	<th align="center">Correo</th>     
     
     </tr>
 </thead>
@@ -40,11 +38,10 @@ $consulta= $conn->query("select * from usuarios");
     
             <tr>
             
-            <td align="Left"><?php echo $row['nombre_usuario']; ?></td>
-            <td align="center"><?php echo $row['no_cuenta']; ?></td>
-            <td align="center"><?php echo $row['Restriccion']; ?></td>
-            <td align="center"><?php echo $row['Motivo']; ?></td>
-            <td align="center"><?php echo $row['Comentarios']; ?></td>
+            <td align="Left"><?php echo $row['Nombre(s)']; ?></td>
+            <td align="center"><?php echo $row['Num_cuenta']; ?></td>
+            <td align="center"><?php echo $row['correo']; ?></td>
+            
                             
     </tr>
         <?php }
