@@ -1,4 +1,4 @@
-<?php 
+<?php
 session_start();
 if (empty($_SESSION['u_usuario']))
 {
@@ -34,37 +34,30 @@ else
         return patron.test(tecla_final);
     }
 </script>
-
 <?php include ('./nav.php'); // se trae el nav bajo el nivel de permisos ver el nav.php?>
+
 <body>
 
-
   <div class="row" style="margin-top:50px">
-  <div class="col s6 offset-s3">
-        
-      
+    <div class="col s6 offset-s3">
       <form action="validar_login.php" method="POST">
-  <div class="form-group">
-    <label for="exampleInputEmail1">Numero de Cuenta</label>
-    <input type="text" onkeypress="return valida(event)" maxlength="10" placeholder="Numero de cuenta" name="no_cuenta" require class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-    
+      <div class="form-group">
+        <label for="exampleInputEmail1">Numero de Cuenta</label>
+        <input type="text" onkeypress="return valida(event)" maxlength="10" placeholder="Numero de cuenta" name="no_cuenta" require class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1">Password</label>
+        <input type="password" placeholder="Contraseña" name="password" require class="form-control" id="exampleInputPassword1" placeholder="Password">
+      </div>
+      <button type="submit" class="btn btn-primary" style="background-color:#CDDC39;color:white">Iniciar Sesion</button>
+      <button type="button" class="btn" style="background-color:#CDDC39"> <a href="./form_registro.php" ><font color="white">Registrar</font></a></button>
+      </form>
+    </div>
   </div>
-  
-  <div class="form-group">
-    <label for="exampleInputPassword1">Password</label>
-    <input type="password" placeholder="Contraseña" name="password" require class="form-control" id="exampleInputPassword1" placeholder="Password">
-  </div>
-  
-   <button type="submit" class="btn btn-primary" style="background-color:#CDDC39;color:white">Iniciar Sesion</button>
-   <button type="button" class="btn" style="background-color:#CDDC39"> <a href="./form_registro.php" ><font color="white">Registrar</font></a></button>
-  </form>
-      
-</div>
-</div>
   <!--Script de nav pasarlo a un php-->
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 	<script type="text/javascript" src="assets/js/materialize.js"></script>
-	<script type="text/javascript">$(".brand-logo").sideNav();</script>   
+	<script type="text/javascript">$(".brand-logo").sideNav();</script>
 
 </body>
 </html>
