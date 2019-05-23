@@ -1,9 +1,9 @@
 <?php
 session_start();
-$conn = new mysqli('localhost', 'root', '', 'db_usuarios');
+$conn = new mysqli('localhost', 'root', '', 'cursos_inter');
 mysqli_set_charset($conn,'utf8'); 
 
-$consulta= $conn->query("select * from c_asignaturas");
+$consulta= $conn->query("select * from cursos");
 ?>
 
 <!DOCTYPE html>
@@ -23,10 +23,12 @@ $consulta= $conn->query("select * from c_asignaturas");
     
     <tr>
     <!--seccion A-->
-    <th>Clave</th>
-	<th>Asignatura</th>
-	<th>Semestre</th>
-	<th>Comentarios</th>        
+    <th>ID</th>
+	<th>Curso</th>
+	<th>Carrera</th>
+	<th>Cupo</th>
+    <th>Salón</th>
+    <th>Horario</th>        
     </tr>
 </thead>
     
@@ -37,10 +39,12 @@ $consulta= $conn->query("select * from c_asignaturas");
         while($row = mysqli_fetch_assoc($consulta)){?>
     
             <tr>
-            <td><?php echo $row['Clave']; ?></td>
-            <td><?php echo $row['Asignatura']; ?></td>
-            <td><?php echo $row['Semestre']; ?></td>
-            <td><?php echo $row['Comentarios']; ?></td>
+            <td><?php echo $row['idCursos']; ?></td>
+            <td><?php echo $row['Nombre_curso']; ?></td>
+            <td><?php echo $row['Carrera']; ?></td>
+            <td><?php echo $row['Cupo']; ?></td>
+            <td><?php echo $row['Salon']; ?></td>
+            <td><?php echo $row['Horario']; ?></td>
                             
     </tr>
         <?php }

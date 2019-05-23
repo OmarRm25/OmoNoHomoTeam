@@ -58,11 +58,8 @@ else {
 							//si se cumple la condicion se muestran las diferentes opciones del menu
 		echo '</li>
 
-	        <li><a href="./session_destroy.php"><i class="material-icons">exit_to_app</i></a></li>
-	        <li><a href="./settings.php"><i class="material-icons">settings</i></a></li>
-	        <li><a href="./dashboard.php"><i class="material-icons">dashboard</i></a></li>
-	        <li><a href="./"><i class="material-icons">home</i></a></li>
-
+	        <li><a href="./"><i class="material-icons tooltipped" data-position="bottom" data-tooltip="Pantalla principal">home</i></a></li>
+			<li><a href="./session_destroy.php"><i class="material-icons tooltipped" data-position="bottom" data-tooltip="Cerrar sesión">exit_to_app</i></a></li>
       	</ul>
 
 	      <ul id="slide-out" class="side-nav fondomenu"  style="background:#00BCD4">
