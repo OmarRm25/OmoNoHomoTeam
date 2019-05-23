@@ -2,7 +2,7 @@
 //nav menu de arriba
 if (empty($_SESSION['u_usuario'])) {
 	echo '
-		<nav class="nav-wrapper card-panel accent-2 left-align panel2" style="background:#00BCD4">
+		<nav class="nav-wrapper card-panel accent-2 left-align panel2" style="background:#00BCD4 ; min-height: 90px;">
 
 		  <div class="panel" >
 
@@ -38,16 +38,13 @@ if (empty($_SESSION['u_usuario'])) {
 
 else {
 	echo '
-		<nav class="nav-wrapper card-panel accent-2 left-align panel2" style="background:#00BCD4">
+		<nav class="nav-wrapper card-panel accent-2 left-align panel2" style="background:#00BCD4; min-height: 90px;">
 
 			<div class="panel" >
 
 				<ul class="rigth" >
 
         	<li><a data-activates="slide-out" class="brand-logo"><i class="material-icons">&#xE5D2;</i></a></li>
-					<li><a id="carga"><i class="brand-logo" class="material-icons"></i>
-	          <img src="./assets/media/img/logo_unam.png" height="50px">
-          </a></li>
 
 				</ul>
 
@@ -121,7 +118,7 @@ else {
 	        </li>
 
 	      </ul>
-				
+
 			</div>
 
 		</nav>
