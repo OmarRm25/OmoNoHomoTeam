@@ -1,4 +1,6 @@
-# UpDown
+# Cursos intersemestrales
 
-Webapp enfocada en el desarrollo de habilidades de autocuidado en niños con síndrome
-de Down. 
+Barrera González Mario Alberto- P.O
+Frías Chagoya Víctor Manuel- Scrum Team
+Ledesma Morales Aidam Isai- Scrum Team
+Rementería Morales Héctor Omar- Scrum master
