@@ -1,12 +1,13 @@
 <?php
 session_start();
 date_default_timezone_set('GMt-6');
-$conn = new mysqli('localhost', 'root', '', 'db_usuarios'); mysqli_set_charset($conn,'utf8');//Conexion a DB con codificacion UTF-8
+$conn = new mysqli('localhost', 'root', '', 'cursos_inter'); 
+mysqli_set_charset($conn,'utf8');//Conexion a DB con codificacion UTF-8
 
 $usuario = $_POST['no_cuenta'];
 $password = $_POST['password'];
 
-$proceso= $conn->query("SELECT * FROM usuarios WHERE no_cuenta='$usuario' and password='$password'");
+$proceso= $conn->query("SELECT * FROM registro_user WHERE Num_cuenta ='$usuario' and passwd='$password'");
 
 if ($resultado = mysqli_fetch_array($proceso)){
         $_SESSION['u_usuario'] = $usuario; //user del usuario
