@@ -2,48 +2,52 @@
 include "conexion.php";
 mysqli_set_charset($conexion,'utf8');
 
-	
+$cuenta = $_POST['no_cuenta'];
+$nombre = $_POST['username'];
+$pat = $_POST['ApPaterno'];
+$mat = $_POST['ApMaterno'];
+$mail = $_POST['correo'];
+$pass = hash ('sha256', $_POST['password']);
 
-	$form_pass = $_POST['password'];
-	$hash = $_POST['password'];
-	//$hash = password_hash($form_pass, PASSWORD_BCRYPT);
+// Filtro de repetición de Usuario
 
-	//comprobacion de usuario existente
-	$buscarUsuario = "SELECT * FROM usuarios WHERE no_cuenta = '$_POST[no_cuenta]'";
-   
-	$result = $conexion->query($buscarUsuario);
-   	$count = mysqli_num_rows($result);
-   
+$result = $conexion->query("SELECT * FROM registro_user WHERE Num_cuenta = '$_POST[no_cuenta]'");
+$count = mysqli_num_rows($result);
+
 if ($count == 1) {
-echo '<br> El numero de cuenta ya ha sido registrado antes';
-//echo '<a href="./recovery.html">Recuperar contraseña</a>'
-}else{
+	echo '<br> El numero de cuenta ya ha sido registrado anteriormente.';
+}
+
+else{
 //insertar nuevos usuarios
 
-mysqli_query($conexion, "INSERT INTO usuarios (
-	nombre_usuario,
-	carrera,
-	no_cuenta,
-	direcion,
-	telefono,
-	institucion,
-	email,
-	password
+if ($conexion->query("INSERT INTO registro_user (
+	Num_cuenta,
+	Nombre,
+	Ap_pat,
+	Ap_mat,
+	Correo,
+	Passwd,
+	Admin
 	)
-	   VALUES (
-   '$_POST[username]',
-   '$_POST[carrera]',
-   '$_POST[no_cuenta]',
-   '$_POST[direccion]',
-   '$_POST[telefono]',
-   '$_POST[institucion]',
-   '$_POST[correo]',
-   '$hash'
-   )");
+	VALUES (
+		 '$cuenta',
+		 '$nombre',
+		 '$pat',
+		 '$mat',
+		 '$mail',
+		 '$pass',
+		 0
+	 )")){
+		 echo "<br />" . "<h2>" . "Usuario Creado Exitosamente!" . "</h2>";
+	 }
 
-echo "<br />" . "<h2>" . "Usuario Creado Exitosamente!" . "</h2>";
- echo "<h4>" . "Bienvenido: " . $_POST['username'] . "</h4>" . "\n\n";
- echo "<h5>" . "<a href='./login.php'>Iniciar Sesión</a>" . "</h5>";
+else {
+	echo "Error de inserción de usuario. Vuelva a intentarlo.";
+}
+
+echo "<h4>" . "Bienvenido: " . $_POST['username'] . "</h4>" . "\n\n";
+echo "<h5>" . "<a href='./login.php'>Iniciar Sesión</a>" . "</h5>";
 
 
 }

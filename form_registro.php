@@ -15,7 +15,7 @@ session_start();
  <!--Materialize files-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="assets/css/materialize.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/estilos.css">    
+    <link rel="stylesheet" type="text/css" href="assets/css/estilos.css">
 </head>
 
 
@@ -41,33 +41,33 @@ session_start();
  </header>
 <div class="row" style="margin-top:50px">
 <div class="col s6 offset-s3">
- 
+
  <form action="submit_registrar_usuario.php" method="post">
 
  <hr />
  <h3 style="text-align: center">Crea tu cuenta</h3>
 
 <!-- No_Cuenta -->
-<label for="no_cuenta">No_Cuenta:</label><br>
+<label for="no_cuenta">Número de Cuenta:</label><br>
 <input type="text" name="no_cuenta" maxlength="10" required>
 <br/><br/>
 
  <!--Nombre-->
-<div>     
+<div>
  <label for="nombre">Nombre:</label><br>
  <input type="text" name="username" maxlength="255" required>
  <br/><br/>
 </div>
 
 <!--ApPaterno-->
-<div>     
+<div>
  <label for="nombre">Apellido Paterno:</label><br>
  <input type="text" name="ApPaterno" maxlength="255" required>
  <br/><br/>
 </div>
 
 <!--ApMaterno-->
-<div>     
+<div>
  <label for="nombre">Apellido Materno:</label><br>
  <input type="text" name="ApMaterno" maxlength="255" required>
  <br/><br/>
@@ -79,18 +79,18 @@ session_start();
 <br/><br/>
 
 <!--Password-->
-<label for="pass">Password:</label><br>
+<label for="xxx">Contraseña:</label><br>
 <input type="password" name="password" maxlength="8" required>
 
  <br/><br/>
 <input type="submit" name="submit" class="btn btn-primary" style="background-color: #00BCD4" value="Registrar">
 <input type="reset" name="clear" class="btn btn-primary" style="background-color: #00BCD4" value="Borrar">
 <hr>
-<label style="text-decoration-color: black" for="login">Ya tienes una cuenta, ingresa aquí:</label>
+<label style="text-decoration-color: black" for="login">¿Ya tienes una cuenta? Ingresa aquí:</label>
 <br>
 <button type="button" class="btn" style="background-color:#CDDC39"> <a href="./login.php" ><font color="white">Login</font></a></button>
 
-   
+
 
  </form>
     </div>
@@ -103,7 +103,7 @@ session_start();
  <!--Script de nav pasarlo a un php-->
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script type="text/javascript" src="assets/js/materialize.js"></script>
-<script type="text/javascript">$(".brand-logo").sideNav();</script> 
-    
+<script type="text/javascript">$(".brand-logo").sideNav();</script>
+
  </body>
 </html>

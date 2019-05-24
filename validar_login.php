@@ -11,7 +11,7 @@ $proceso= $conn->query("SELECT * FROM registro_user WHERE Num_cuenta ='$usuario'
 
 if ($resultado = mysqli_fetch_array($proceso)){
   $_SESSION['u_usuario'] = $usuario; // Número de cuenta
-  $_SESSION['g_usuario'] = $resultado[7]; // Bandera de administrador
+  $_SESSION['g_usuario'] = $resultado[6]; // Bandera de administrador
   $_SESSION['u_nombre'] = $resultado[1]; // Nombre del usuario
   $privilegio = $_SESSION['g_usuario'];
 
@@ -21,7 +21,6 @@ if ($resultado = mysqli_fetch_array($proceso)){
   $usuario = $_POST['no_cuenta'];
 
 //REGISTRA LOS LOGINS
-//$proceso3 = $conn->query("INSERT INTO connections (numero_empleado,area,hora_login,hora_logout) VALUES ('$numero_empleado','$area_empleado',now(),'')");
 
   echo 'conexion exitosa';
   header ('location: ./dashboard.php');

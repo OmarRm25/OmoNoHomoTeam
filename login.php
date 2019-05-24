@@ -46,7 +46,7 @@ else
         <input type="text" onkeypress="return valida(event)" maxlength="10" placeholder="Numero de cuenta" name="no_cuenta" require class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
       </div>
       <div class="form-group">
-        <label for="exampleInputPassword1">Password</label>
+        <label for="exampleInputPassword1">Contraseña</label>
         <input type="password" placeholder="Contraseña" name="password" require class="form-control" id="exampleInputPassword1" placeholder="Password">
       </div>
       <button type="submit" class="btn btn-primary" style="background-color:#CDDC39;color:white">Iniciar Sesion</button>

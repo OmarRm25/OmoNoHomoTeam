@@ -37,9 +37,8 @@ if ($_SESSION['u_usuario'] == '')
 
     <div class="row">
         <div class="col s8 offset-s2">
-    <?php?>
-        <p align="Justify"> Por favor seleccione una de las siguientes Opciones del Menú:</p>
 
+        <p align="Justify"> Por favor seleccione una de las siguientes Opciones del Menú:</p>
         </div>
     </div>
 
@@ -48,10 +47,9 @@ $conn = new mysqli('localhost', 'root', '', 'cursos_inter');
 mysqli_set_charset($conn,'utf8');
 
 $condicion = $_SESSION['g_usuario'];//traer botones a el dashboard desde la DB
-$botones= $conn->query("SELECT * FROM botones WHERE Permisos <='".$condicion."'ORDER BY ColorOrder");
+$botones= $conn->query("SELECT * FROM botones WHERE Permisos <='$condicion'ORDER BY ColorOrder");
 
     ?>
-
 <div class="row">
         <div class="col s8 offset-s2">
 
