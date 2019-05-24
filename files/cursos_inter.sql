@@ -56,8 +56,8 @@ CREATE TABLE `cursos` (
   `Nombre_curso` varchar(45) NOT NULL,
   `Carrera` varchar(45) NOT NULL,
   `Cupo` tinyint(2) UNSIGNED NOT NULL,
-  `Salon` varchar(6) NOT NULL,
-  `Horario` datetime NOT NULL
+  `Salon` varchar(15) NOT NULL,
+  `Horario` varchar(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
