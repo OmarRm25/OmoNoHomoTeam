@@ -6,6 +6,6 @@
          text-align: center;
          background:#cddc39;">
  <p>UNAM, FES Aragón 2019</p>
- <p>Tienes alguna duda? <a href="./form_reporte.php">
+ <p>¿Tienes alguna duda? <a href="./form_reporte.php">
  Contáctanos.</a></p>
 </footer>

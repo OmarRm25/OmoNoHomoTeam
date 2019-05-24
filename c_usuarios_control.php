@@ -7,7 +7,7 @@ $conn = new mysqli('localhost', 'root', '', 'cursos_inter');
 mysqli_set_charset($conn,'utf8');
 
 // Consulta para acarrerar
-$consulta= $conn->query("select * from registro_user");
+$consulta = $conn->query("SELECT * FROM REGISTRO_USER");
 ?>
 
 <!DOCTYPE html>
@@ -20,7 +20,7 @@ $consulta= $conn->query("select * from registro_user");
 
   <body>
   <?php include('./nav.php')?>
-  <table class="stripped highlight" style="width:100%; border:2px">
+  <table class="stripped highlight" style="width:80%; border:2px; margin:10%; margin-top:3%;">
     <thead>
       <tr>
         <!--seccion A-->

@@ -7,60 +7,59 @@ $consulta= $conn->query("select * from cursos");
 ?>
 
 <!DOCTYPE html>
-  <html>
-    <head>
-        <meta charset="UTF-8">
-                <?php include('./styles.php')?>
+<html>
+  <head>
+      <meta charset="UTF-8">
+              <?php include('./styles.php')?>
 
-    </head>
-
-<body>
+  </head>
+  <body>
     <?php include('./nav.php')?>
 
 
-<table style="width:100%; border:2px">
-<thead>
+    <table style="width:80%; border:2px; margin:10%; margin-top:3%;">
+      <thead>
+        <tr>
+        <!--seccion A-->
+        <th>Clave de Curso</th>
+      	<th>Tema</th>
+      	<th>Carrera</th>
+      	<th>Cupo</th>
+        <th>Salón</th>
+        <th>Horario</th>
+        </tr>
+      </thead>
 
-    <tr>
-    <!--seccion A-->
-    <th>ID</th>
-	<th>Curso</th>
-	<th>Carrera</th>
-	<th>Cupo</th>
-    <th>Salón</th>
-    <th>Horario</th>
-    </tr>
-</thead>
 
-
-    <?php
-    //acarreo de las asignaturas en una tabla
-    if (mysqli_num_rows($consulta)>0){
+      <?php
+      //acarreo de las asignaturas en una tabla
+      if (mysqli_num_rows($consulta)>0){
         while($row = mysqli_fetch_assoc($consulta)){?>
-
-            <tr>
+          <tr>
             <td><?php echo $row['idCursos']; ?></td>
             <td><?php echo $row['Nombre_curso']; ?></td>
             <td><?php echo $row['Carrera']; ?></td>
             <td><?php echo $row['Cupo']; ?></td>
             <td><?php echo $row['Salon']; ?></td>
             <td><?php echo $row['Horario']; ?></td>
+          </tr>
+          <?php
+        }
 
-    </tr>
-        <?php }
-    } else {
+      }
+
+      else {
         echo 'No se encontraron resultados';
-    }
+      }
 
-    ?>
+      ?>
 
-</table>
-
+    </table>
 
     <!--Script de nav pasarlo a un php-->
-<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-<script type="text/javascript" src="assets/js/materialize.js"></script>
-<script type="text/javascript">$(".brand-logo").sideNav();</script>
-</body>
-<?php include ('./foot.php'); ?>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="assets/js/materialize.js"></script>
+    <script type="text/javascript">$(".brand-logo").sideNav();</script>
+  </body>
+  <?php include ('./foot.php'); ?>
 </html>
