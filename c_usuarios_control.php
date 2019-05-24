@@ -45,11 +45,14 @@ $consulta= $conn->query("select * from registro_user");
                 <td align="center"><?php echo '<button type="button" class="btn red"><a href="./form_usuarios_delete.php?Num_cuenta='.$row['Num_cuenta'].'"><font color="white"><i class="material-icons">delete</i></font></a></button>'; ?></td>
                 <td align="center"><?php echo '<button type="button" class="btn grey"><a href="./form_usuarios_view.php?Num_cuenta='.$row['Num_cuenta'].'"><font color="white"><i class="material-icons">person</i></font></a></button>'; ?></td>
             </tr>
-          <?php }
-      } else {
-          echo 'No se ha encontrado resultados.';
+          <?php
       }
-      ?>
+    }
+
+    else {
+      echo 'No se ha encontrado resultados.';
+    }
+?>
 
   </table>
       <!--Script de nav pasarlo a un php-->
