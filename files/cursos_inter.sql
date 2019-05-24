@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.5
+-- version 4.8.3
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 23-05-2019 a las 08:57:28
--- Versión del servidor: 10.1.40-MariaDB
--- Versión de PHP: 7.3.5
+-- Tiempo de generación: 24-05-2019 a las 09:39:13
+-- Versión del servidor: 10.1.37-MariaDB
+-- Versión de PHP: 7.2.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -21,11 +21,13 @@ SET time_zone = "+00:00";
 --
 -- Base de datos: `cursos_inter`
 --
+
 -- --------------------------------------------------------
 
 --
 -- Estructura de tabla para la tabla `botones`
 --
+
 CREATE TABLE `botones` (
   `ID` int(11) NOT NULL,
   `URL` varchar(255) COLLATE utf8_spanish2_ci NOT NULL,
@@ -37,15 +39,18 @@ CREATE TABLE `botones` (
   `Descripcion` varchar(255) COLLATE utf8_spanish2_ci NOT NULL,
   `Comentarios` varchar(255) COLLATE utf8_spanish2_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish2_ci;
--- --------------------------------------------------------
+
+--
 -- Volcado de datos para la tabla `botones`
 --
 
 INSERT INTO `botones` (`ID`, `URL`, `Boton`, `Icono`, `Color`, `ColorOrder`, `Permisos`, `Descripcion`, `Comentarios`) VALUES
-(1, 'c_cursos', 'Consultar cursos', 'featured_play_list', 'green', 1, '1', 'Catalogo de cursos', ''),
-(2, 'c_usuarios', 'Usuarios', 'people', 'green', 1, '2', 'Catalogo de Usuarios', ''),
-(3, 'form_registro', 'Registrar Usuario', 'people', 'blue', 2, '1', 'Registro de Usuarios', ''),
-(4, 'c_usuarios_control', 'Control de Usuarios', 'settings', 'black', 3, '2', 'editar/borrar usuarios', '');
+(1, 'c_cursos', 'Consultar cursos', 'featured_play_list', 'green', 1, '0', 'Catalogo de cursos', ''),
+(2, 'c_usuarios', 'Usuarios', 'people', 'green', 1, '1', 'Catalogo de Usuarios', ''),
+(3, 'form_registro', 'Registrar Usuario', 'people', 'blue', 2, '0', 'Registro de Usuarios', ''),
+(4, 'c_usuarios_control', 'Control de Usuarios', 'settings', 'black', 3, '1', 'editar/borrar usuarios', '');
+
+-- --------------------------------------------------------
 
 --
 -- Estructura de tabla para la tabla `cursos`
@@ -56,9 +61,25 @@ CREATE TABLE `cursos` (
   `Nombre_curso` varchar(45) NOT NULL,
   `Carrera` varchar(45) NOT NULL,
   `Cupo` tinyint(2) UNSIGNED NOT NULL,
-  `Salon` varchar(15) NOT NULL,
-  `Horario` varchar(20) NOT NULL
+  `Salon` varchar(20) NOT NULL,
+  `Horario` varchar(15) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Volcado de datos para la tabla `cursos`
+--
+
+INSERT INTO `cursos` (`idCursos`, `Nombre_curso`, `Carrera`, `Cupo`, `Salon`, `Horario`) VALUES
+(1, 'Derechos humanos', 'Derecho', 30, 'A8021', '12:00-15:00'),
+(2, 'Programación phyton 3', 'Ingeniería en computación', 25, 'A204', '9:00-13:00'),
+(3, 'Curso básico de Alemán', 'Idiomas', 30, 'Duacyd sala 8', '2:30-5:30'),
+(4, 'Gestión de proyectos con Github', 'Ingeniería en computación', 20, 'A203', '12:15-14:15'),
+(5, 'Manejo de Office 2016', 'Derecho', 30, 'Cloud', '1:30-15:30'),
+(6, 'Como redactar documentos', 'Todas', 60, 'Fundación UNAM', '10:00-12:00'),
+(7, 'Autocad', 'Arquitectura', 25, 'Centro de cómputo', '16:00-19:00'),
+(8, 'Administración de empresas', 'Relaciones Internacionales', 20, 'A613', '9:45-12:45'),
+(9, 'Planeación rural', 'Planificación para el Desarrollo Agropecuario', 20, 'Invernadero', '9:00-12:00'),
+(10, 'Metodología Ágil (Scrum)', 'Ineniería en Computación', 15, 'A504', '2:15-6:15');
 
 -- --------------------------------------------------------
 
