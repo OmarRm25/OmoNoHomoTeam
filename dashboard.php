@@ -92,4 +92,5 @@ $botones= $conn->query("SELECT * FROM botones WHERE Permisos <='$condicion'ORDER
 <script type="text/javascript" src="assets/js/materialize.js"></script>
 <script type="text/javascript">$(".brand-logo").sideNav();</script>
 </body>
- </html>
+<?php include ('./foot.php'); ?>
+</html>

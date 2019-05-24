@@ -60,4 +60,5 @@ else
 	<script type="text/javascript">$(".brand-logo").sideNav();</script>
 
 </body>
+<?php include ('./foot.php'); ?>
 </html>

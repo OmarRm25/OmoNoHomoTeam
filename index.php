@@ -17,7 +17,7 @@ session_start();
 </head>
 
     <?php include ('./nav.php');?>
-    
+
 <body >
 
     <div class="container">
@@ -27,7 +27,7 @@ session_start();
 
             <div class="carousel carousel-slider center" style="max-height:350px">
     <div class="carousel-fixed-item center">
-      
+
     </div>
     <div class="carousel-item">
       <img src="assets/media/img/carrusel/derecho.jpg"  width="100%">
@@ -50,20 +50,20 @@ session_start();
     <div class="carousel-item">
       <img src="assets/media/img/carrusel/redaccion.jpg" width="100%">
     </div>
-  </div>    
+  </div>
     </div>
     </div>
   </div>
 <br>
-    <div class="container center-align"> 
+    <div class="container center-align">
       <div class="col s12">
         <h1>Inscríbete en nuestros cursos intersemestrales</h1>
       </div>
     </div>
-    
-   
+
+
 	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-	
+
 	<script type="text/javascript" src="assets/js/materialize.js"></script>
 
 	<script type="text/javascript">$(".brand-logo").sideNav();</script>
@@ -79,9 +79,9 @@ session_start();
       setTimeout(autoplay, 4500);
     }
     </script>
-    
+
     <script>$( document ).ready(function)</script>
-    
+
 <script>document.addEventListener('DOMContentLoaded', function() {
     var elems = document.querySelectorAll('.sidenav');
     var instances = M.Sidenav.init(elems, options);
@@ -94,4 +94,5 @@ session_start();
   });</script>
 
 </body>
+<?php include ('./foot.php'); ?>
 </html>

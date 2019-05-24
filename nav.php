@@ -85,21 +85,6 @@ else {
 	          </i> <font color="white">Inicio</font></a>
 	        </li>
 
-
-	        <li>
-	          <a href="./form_contacto.php">
-	          <i class="material-icons">
-	          <font color="white">mail</font>
-	          </i> <font color="white">Contáctanos</font></a>
-	        </li>
-
-	        <li>
-	          <a href="./c_asignaturas.php">
-	          <i class="material-icons">
-	          <font color="white">list</font>
-	          </i> <font color="white">Asignaturas</font></a>
-	        </li>
-
 	        <li>
 	          <a href="./form_prestamo.php">
 	          <i class="material-icons">

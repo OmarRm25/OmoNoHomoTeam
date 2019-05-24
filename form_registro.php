@@ -96,14 +96,11 @@ session_start();
     </div>
     </div>
 <hr /><br />
-
-<footer>
- &copy;2019 <a href="http://www.aragon.unam.mx/aragon/index.html">www.aragon.unam.mx</a>
-</footer>
  <!--Script de nav pasarlo a un php-->
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script type="text/javascript" src="assets/js/materialize.js"></script>
 <script type="text/javascript">$(".brand-logo").sideNav();</script>
 
  </body>
+ <?php include ('./foot.php'); ?>
 </html>

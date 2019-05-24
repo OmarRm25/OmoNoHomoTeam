@@ -60,4 +60,5 @@ $consulta= $conn->query("select * from registro_user");
   <script type="text/javascript" src="assets/js/materialize.js"></script>
   <script type="text/javascript">$(".brand-logo").sideNav();</script>
   </body>
+  <?php include ('./foot.php'); ?>
 </html>

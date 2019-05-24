@@ -1,24 +1,19 @@
 <?php session_start();?>
 <!DOCTYPE html>
 <html>
-
 <head>
-
 	<!--<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" /> -->
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-
 	<title>Menu</title>
-    <?php include('styles.php'); ?>
-
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <?php include('styles.php'); ?>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/materialize-social.css">
 
-    
 </head>
 
 <?php include('./nav.php') ?>
 <body>
-	
+
 	<section class="container">
 		<div class="row">
 			<h3 class="center-align">Contáctanos</h3>
@@ -60,15 +55,6 @@
 				</form>
 
 			</article>
-
-
-			<article class="col s6 right-aling">
-				<br><br><iframe class="col s12 m6" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15046.141530706998!2d-99.045875!3d19.4755888!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x501a154bf16c02f1!2sFacultad+de+Estudios+Superiores+Arag%C3%B3n+UNAM!5e0!3m2!1ses-419!2smx!4v1503202727921"
-				  frameborder="0" style="border:0" allowfullscreen></iframe>
-			</article>
-			<br><br><br><br><br><br><br><br><br><br>
-
-
 
 			<p class="center-aling">
 				<a class="waves-effect waves-light btn-floating social facebook" href="https://www.facebook.com/">

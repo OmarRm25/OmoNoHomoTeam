@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!--bootstrap-->
-    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen"> 
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
     <script  type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
     <script  type="text/javascript" src="js/jquery-3.3.1.min.js" ></script>
 <!--
@@ -17,7 +17,7 @@
     <title>Document</title>
 </head>
 <body>
-    
+
     <h1>Hola mundo</h1>
 
     <form>
@@ -41,4 +41,5 @@
 
 
 </body>
+<?php include ('./foot.php'); ?>
 </html>
