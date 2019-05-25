@@ -16,6 +16,13 @@ $consulta= $conn->query("select * from cursos");
   <body>
     <?php include('./nav.php')?>
 
+    <form>
+      Introduzca la clave del curso:<br>
+      <input type="text" name="curso">>
+      <button  type="submit" name="Checar curso" value="Checar cursos">Checar cursos</button>
+      <br><br>
+    </form>
+
 
     <table style="width:80%; border:2px; margin:10%; margin-top:3%;">
       <thead>
