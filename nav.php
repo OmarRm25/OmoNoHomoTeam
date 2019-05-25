@@ -2,7 +2,7 @@
 //nav menu de arriba
 if (empty($_SESSION['u_usuario'])) {
 	echo '
-		<nav class="nav-wrapper card-panel accent-2 left-align panel2" style="background:#00BCD4 ; min-height: 90px;">
+		<nav class="nav-wrapper card-panel accent-2 left-align panel2" style="background:#00BCD4; min-height: 90px;">
 
 		  <div class="panel" >
 
