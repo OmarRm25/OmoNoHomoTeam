@@ -86,13 +86,6 @@ else {
 	        </li>
 
 	        <li>
-	          <a href="./form_prestamo.php">
-	          <i class="material-icons">
-	          <font color="white">computer</font>
-	          </i> <font color="white">Servicios y Prestamos</font></a>
-	        </li>
-
-	        <li>
 	          <a href="./session_destroy.php">
 	          <i class="material-icons">
 	          <font color="white">exit_to_app</font>

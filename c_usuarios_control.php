@@ -33,7 +33,8 @@ $consulta = $conn->query("SELECT * FROM REGISTRO_USER");
     </thead>
     <?php
     if (mysqli_num_rows($consulta)>0){
-      while($row = mysqli_fetch_assoc($consulta)){?>
+      while($row = mysqli_fetch_assoc($consulta)){
+      ?>
               <tr>
                 <td align="Left"><?php echo $row['Num_cuenta']; ?></td>
                 <td align="center"><?php echo $row['Nombre']; ?></td>

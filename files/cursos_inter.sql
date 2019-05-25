@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.3
+-- version 4.8.5
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 24-05-2019 a las 09:39:13
--- Versión del servidor: 10.1.37-MariaDB
--- Versión de PHP: 7.2.12
+-- Tiempo de generación: 24-05-2019 a las 10:29:21
+-- Versión del servidor: 10.1.40-MariaDB
+-- Versión de PHP: 7.3.5
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -79,7 +79,7 @@ INSERT INTO `cursos` (`idCursos`, `Nombre_curso`, `Carrera`, `Cupo`, `Salon`, `H
 (7, 'Autocad', 'Arquitectura', 25, 'Centro de cómputo', '16:00-19:00'),
 (8, 'Administración de empresas', 'Relaciones Internacionales', 20, 'A613', '9:45-12:45'),
 (9, 'Planeación rural', 'Planificación para el Desarrollo Agropecuario', 20, 'Invernadero', '9:00-12:00'),
-(10, 'Metodología Ágil (Scrum)', 'Ineniería en Computación', 15, 'A504', '2:15-6:15');
+(10, 'Metodología Ágil (Scrum)', 'Ingeniería en Computación', 15, 'A504', '2:15-6:15');
 
 -- --------------------------------------------------------
 
@@ -100,11 +100,11 @@ CREATE TABLE `cursos_inscritos` (
 
 CREATE TABLE `registro_user` (
   `Num_cuenta` int(10) UNSIGNED NOT NULL,
-  `Nombre(s)` varchar(45) NOT NULL,
+  `Nombre` varchar(45) NOT NULL,
   `Ap_pat` varchar(15) NOT NULL,
   `Ap_mat` varchar(15) NOT NULL,
-  `correo` varchar(45) NOT NULL,
-  `passwd` varchar(8) NOT NULL,
+  `Correo` varchar(45) NOT NULL,
+  `Passwd` varchar(8) NOT NULL,
   `Admin` tinyint(1) DEFAULT '0'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
@@ -112,7 +112,7 @@ CREATE TABLE `registro_user` (
 -- Volcado de datos para la tabla `registro_user`
 --
 
-INSERT INTO `registro_user` (`Num_cuenta`, `Nombre(s)`, `Ap_pat`, `Ap_mat`, `correo`, `passwd`, `Admin`) VALUES
+INSERT INTO `registro_user` (`Num_cuenta`, `Nombre`, `Ap_pat`, `Ap_mat`, `Correo`, `Passwd`, `Admin`) VALUES
 (1234, 'Yii', 'Ha', 'a', 'correo@correo.com', '4321', 0),
 (4321, 'Ha', 'Yii', '', 'correin@correo.com', '1234', 1);
 
