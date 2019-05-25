@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 25-05-2019 a las 06:35:36
+-- Tiempo de generación: 25-05-2019 a las 07:44:23
 -- Versión del servidor: 10.1.40-MariaDB
 -- Versión de PHP: 7.3.5
 
@@ -30,25 +30,25 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `botones` (
   `ID` int(11) NOT NULL,
-  `URL` varchar(255) COLLATE utf8_spanish2_ci NOT NULL,
-  `Boton` varchar(255) COLLATE utf8_spanish2_ci NOT NULL,
-  `Icono` varchar(255) COLLATE utf8_spanish2_ci NOT NULL,
-  `Color` varchar(255) COLLATE utf8_spanish2_ci NOT NULL,
+  `URL` varchar(255) COLLATE utf8_general_ci NOT NULL,
+  `Boton` varchar(255) COLLATE utf8_general_ci NOT NULL,
+  `Icono` varchar(255) COLLATE utf8_general_ci NOT NULL,
+  `Color` varchar(255) COLLATE utf8_general_ci NOT NULL,
   `ColorOrder` int(11) NOT NULL,
-  `Permisos` varchar(255) COLLATE utf8_spanish2_ci NOT NULL,
-  `Descripcion` varchar(255) COLLATE utf8_spanish2_ci NOT NULL,
-  `Comentarios` varchar(255) COLLATE utf8_spanish2_ci NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish2_ci;
+  `Permisos` varchar(255) COLLATE utf8_general_ci NOT NULL,
+  `Descripcion` varchar(255) COLLATE utf8_general_ci NOT NULL,
+  `Comentarios` varchar(255) COLLATE utf8_general_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 --
 -- Volcado de datos para la tabla `botones`
 --
 
 INSERT INTO `botones` (`ID`, `URL`, `Boton`, `Icono`, `Color`, `ColorOrder`, `Permisos`, `Descripcion`, `Comentarios`) VALUES
-(0, 'c_asignaturas', 'Asignaturas', 'featured_play_list', 'green', 1, '0', 'Catalogo de asignaturas', ''),
-(2, 'form_prestamo', 'Servicios', 'computer', 'blue', 2, '0', 'Formulario de Prestamos', ''),
-(3, 'c_usuarios', 'Usuarios', 'people', 'green', 1, '0', 'Catalogo de Usuarios', ''),
-(6, 'c_usuarios_control', 'Control de Usuarios', 'settings', 'black', 3, '1', 'editar/borrar profesores', '');
+(0, 'form_cursos', 'Añadir Cursos', 'people', 'green', 1, '1', 'Catalogo de Usuarios', ''),
+(1, 'c_cursos', 'Consultar Cursos', 'featured_play_list', 'green', 1, '0', 'Catalogo de Cursos', ''),
+(2, 'form_inscripcion', 'Inscribir Cursos', 'computer', 'blue', 2, '0', 'Formulario de Inscripción', ''),
+(6, 'c_usuarios_control', 'Control de Usuarios', 'settings', 'black', 3, '1', 'Editado y borrado de usuarios', '');
 
 -- --------------------------------------------------------
 
