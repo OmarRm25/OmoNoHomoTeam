@@ -15,6 +15,7 @@ $consulta = $conn->query("SELECT * FROM REGISTRO_USER");
 
   <head>
     <meta charset="UTF-8">
+    <link rel="icon" type="image/jpg" sizes="120x120" href="assets/media/favicon.jpg">
     <?php include('./styles.php')?>
   </head>
 

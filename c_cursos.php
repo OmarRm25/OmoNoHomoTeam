@@ -29,7 +29,8 @@ if ($resultado = mysqli_fetch_array($proceso)){
   <head>
 
     <meta charset="UTF-8">
-    <title>Formulario_prestamo</title>
+    <title>Consulta de cursos</title>
+    <link rel="icon" type="image/jpg" sizes="120x120" href="assets/media/favicon.jpg">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <?php include('styles.php'); ?>
 

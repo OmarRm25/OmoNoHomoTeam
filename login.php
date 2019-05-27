@@ -15,6 +15,7 @@ else
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/jpg" sizes="120x120" href="assets/media/favicon.jpg">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <?php include ('./styles.php'); //traen los estilos?>
 

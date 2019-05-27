@@ -7,7 +7,7 @@ $nombre = $_POST['username'];
 $pat = $_POST['ApPaterno'];
 $mat = $_POST['ApMaterno'];
 $mail = $_POST['correo'];
-$pass = hash ('sha256', $_POST['password']);
+$pass = $_POST['password'];
 
 // Filtro de repetición de Usuario
 
