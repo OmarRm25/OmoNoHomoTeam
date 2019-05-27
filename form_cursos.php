@@ -13,6 +13,7 @@ session_start();
  <link rel="icon" type="image/jpg" sizes="120x120" href="assets/media/favicon.jpg">
  <meta http-equiv="X-UA-Compatible" content="ie=edge">
  <?php include('./styles.php') //acarreo de los estilos ?>
+ <?php include ('./nav.php'); //acarreo del nav ?>
  <!--Materialize files-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="assets/css/materialize.css">

@@ -42,7 +42,9 @@ if ($resultado = mysqli_fetch_array($proceso)){
 
     <div class="row">
       <div class="col s8 offset-s2">
-        <h5 align="center">Consulta de Cursos Intersemestrales</h5>
+        <h1 align="center">Consulta de Cursos Intersemestrales</h1>
+
+        <br><br>
           <!--Empieza Formulario-->
           <form action="#" method="post" accept-charset="utf-8" class="form_cotact">
           <!-- Los datos de traen de la consulta -->
@@ -65,7 +67,12 @@ if ($resultado = mysqli_fetch_array($proceso)){
 
             ?>
             </select><br>
-            <input type="submit" name="consulta" value="Consultar Cursos" /><br><br>
+<br>
+            <div class="container center-align">
+            <input type="submit" name="consulta" class="btn btn-primary" style="background-color: #00BCD4" value="Consultar Cursos" />
+            </div>
+
+            <br><br>
             <?php
             if(isset($_POST['consulta'])){
             ?>

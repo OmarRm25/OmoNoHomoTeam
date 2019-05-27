@@ -17,7 +17,7 @@ if ($_SESSION['u_usuario'] == '')
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <?php include('./styles.php') //acarreo de los estilos ?>
     <title>Home</title>
-    <?php include ('./nav.php'); //acarreo del nav ?>
+    <?php include('./nav.php'); //acarreo del nav ?>
 </head>
 <script>
     function valida(e){

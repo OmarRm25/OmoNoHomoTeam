@@ -1,9 +1,9 @@
 <?php 
- session_start()
+ session_start();
  ?>
 
  <!DOCTYPE html>
- <html lang="en">
+ <html lang="es">
  <head>
  	<title>Inscribir curso</title>
  	<meta charset="utf-8">
@@ -17,7 +17,7 @@
 	<link rel="stylesheet" type="text/css" href="assets/css/materialize.css">
     <link rel="stylesheet" type="text/css" href="assets/css/estilos.css">
 
- <?php include ('./nav.php'); //acarreo del nav ?>
+<?php include('./nav.php'); ?>
 
  </head>
 
@@ -26,12 +26,31 @@
 	<header>
 		<h1 style="text-align: center">Inscribir curso</h1>
 	</header>
+<br>
 
+<div class="container">
+	<div class="row">
+		<div class="col s6">
+			<label for="id_curso">ID de curso: </label>
+			<input type="text" name="id_curso" maxlength="10" required>
+ 		</div>
+	</div>	
+	<div class="row">
+		<div class="col s6">
+			<label for="no_cuenta">Número de Cuenta: </label>
+			<input type="text" name="no_cuenta" maxlength="10" required>
+		</div>	
+	</div>	
+</div>
 
-
- 
+<br>
+<div class="container center-align">
+	<input type="submit" name="Inscribir curso" class="btn btn-primary" style="background-color: #00BCD4" value="Inscribir curso">
+</div>
  </body>
+<br>
+<br>
 
 <?php include ('./foot.php'); ?>
- 
+
  </html>
