@@ -115,13 +115,13 @@ CREATE TABLE `registro_user` (
 INSERT INTO `registro_user` (`Num_cuenta`, `Nombre`, `Ap_pat`, `Ap_mat`, `Correo`, `Passwd`, `Admin`) VALUES
 (1234, 'Yii', 'Ha', 'a', 'correo@correo.com', '4321', 0),
 (4321, 'Ha', 'Yii', '', 'correin@correo.com', '1234', 1),
-(416007154, "Hector Omar", "Rementeria", "Morales", "omoelnohomo@admin.unam.com", Homo1234, 1),
-(312192378, "Victor Manuel", "Frias", "Chagoya", "victorlg@admin.unam.com", LGisus1234, 1),
-(313075513, "Mario Alberto", "Barrera", "Gonzalez", "mariomary@admin.unam.com", MarioB1234, 1),
-(313203385, "Aidam Isai", "Ledesma", "Morales", "sirioisai@admin.unam.com", elsirio1234, 1);
+(416007154, 'Hector Omar', 'Rementeria', 'Morales', 'omoelnohomo@admin.unam.com', 'Homo1234', 1),
+(312192378, 'Victor Manuel', 'Frias', 'Chagoya', 'victorlg@admin.unam.com', 'LG1234', 1),
+(313075513, 'Mario Alberto', 'Barrera', 'Gonzalez', 'mariomary@admin.unam.com', 'Mari1234', 1),
+(313203385, 'Aidam Isai', 'Ledesma', 'Morales', 'sirioisai@admin.unam.com', 'Isai1234', 1);
 
 --
--- Índices para tablas volcadas
+-- Índices para tablas volcada
 --
 
 --
