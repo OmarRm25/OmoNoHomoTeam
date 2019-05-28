@@ -39,20 +39,24 @@ if ($conexion->query("INSERT INTO registro_user (
 		 '$pass',
 		 0
 	 )")){
-		 echo "<br />" . "<h2>" . "Usuario Creado Exitosamente!" . "</h2>";
+		include('./styles.php');
+		include('./nav.php');
+		 echo "<br />" . "<h2 class=\"center-align\">" . "Usuario Creado Exitosamente!" . "</h2>". "<br>";
 	 }
 
 else {
 	echo "Error de inserción de usuario. Vuelva a intentarlo.";
 }
 
-echo "<h4>" . "Bienvenido: " . $_POST['username'] . "</h4>" . "\n\n";
-echo "<h5>" . "<a href='./login.php'>Iniciar Sesión</a>" . "</h5>";
+echo "<h4 class=\"center-align\">" . "Bienvenido: " . $_POST['username'] . "</h4>" . "\n\n" . "<br>";
+echo "<h5 class=\"center-align\">" . "<a class=\"btn btn-primary\" href='./login.php'>Iniciar Sesión</a>" . "</h5>" . "<br>";
 
 
 }
 
 mysqli_close($conexion);
+
+include('./foot.php');
 
 //header ('Location:./registro.html');
 ?>

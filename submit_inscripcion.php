@@ -27,20 +27,23 @@ if ($conexion->query("INSERT INTO cursos_inscritos(
 		 '$cuenta',
 		 '$curso'
 	)")){
-		echo "<br />" . "<h2>" . "¡Curso inscrito con éxito!" . "</h2>";
+		include('./styles.php');
+		include('./nav.php');
+		echo "<br />" . "<h2 class=\"center-align\">" . "¡Curso inscrito con éxito!" . "</h2>". "<br>";
 	}
 
 else {
-	echo "Error de inscripción de curso, vualva a intentarlo.";
+	echo "Error de inscripción de curso, vuelva a intentarlo.";
 }
 
 
-echo "<h5>" . "<a href='./dashboard.php'>Volver al menú</a>" . "</h5>";
+echo "<h5 class=\"center-align\">" . "<a class=\"btn btn-primary\" href='./dashboard.php'>Volver al menú</a>" . "</h5>". "<br>";
 
 
 }
 
 mysqli_close($conexion);
 
+include('foot.php');
 
 ?>
