@@ -50,6 +50,12 @@ session_start();
     <div class="carousel-item">
       <img src="assets/media/img/carrusel/redaccion.jpg" width="100%">
     </div>
+    <div class="carousel-item">
+      <img src="assets/media/img/carrusel/Planeacion_rural.jpg" width="100%">
+    </div>
+    <div class="carousel-item">
+      <img src="assets/media/img/carrusel/administracion.jpg" width="100%">
+    </div>
   </div>
     </div>
     </div>
